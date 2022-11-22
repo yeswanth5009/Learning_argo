@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tomcat-deployment
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yeswanth5009/Learning_argo.git
+    targetRevision: HEAD
+    path: guestbook
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+    
