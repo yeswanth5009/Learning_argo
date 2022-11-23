@@ -11,4 +11,8 @@ spec:
     path: Tomcat
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: stage
+    
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
