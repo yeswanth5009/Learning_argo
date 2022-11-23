@@ -27,7 +27,7 @@ spec:
   minReadySeconds: 10    
   strategy:
     rollingUpate:
-      maxUnavailable: 1
+      maxUnavailable: 3
       maxSurge: 1
   template:
     metadata:
@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
         - name: t1
-          image: tomcat:7.0.57-jre8
+          image: tomcat
           ports:
           - containerPort: 8080
           env:
