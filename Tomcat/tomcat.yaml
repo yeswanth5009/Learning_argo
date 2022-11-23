@@ -27,7 +27,7 @@ spec:
   minReadySeconds: 10    
   strategy:
     rollingUpate:
-      maxUnavailable: 2
+      maxUnavailable: 1
       maxSurge: 1
   template:
     metadata:
