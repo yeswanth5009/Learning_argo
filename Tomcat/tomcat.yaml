@@ -24,11 +24,6 @@ spec:
   selector:
     matchLabels:
       app: t1
-  minReadySeconds: 10    
-  strategy:
-    rollingUpate:
-      maxUnavailable: 0
-      maxSurge: 1
   template:
     metadata:
       labels:
