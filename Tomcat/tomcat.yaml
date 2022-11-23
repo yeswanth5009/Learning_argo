@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
         - name: t1
-          image: tomcat
+          image: tomcat:7.0.57-jre8
           ports:
           - containerPort: 8080
           env:
