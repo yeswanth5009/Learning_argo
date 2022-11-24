@@ -32,6 +32,7 @@ spec:
       containers:
         - name: t1
           image: tomcat
+          imagePullPolicy: Always
           ports:
           - containerPort: 8080
           env:
